@@ -72,6 +72,7 @@ I’m passionate about programming, automation, artificial intelligence, and ope
 - Keep learning and sharing on GitHub
 - Contribute to open-source projects
 - Collaborate with other developers
+- Increase my skill with IA fluent workflow
 
 ---
 
