@@ -66,6 +66,7 @@ I’m passionate about programming, automation, artificial intelligence, and ope
 
 - Contributor to [Django](https://github.com/django/django)
 - Contributor to [django-oscar-api](https://github.com/django-oscar/django-oscar-api)
+- Contributor to [LocalAI](https://github.com/mudler/LocalAI)
 
 ## 🎯 Goals
 
