@@ -1,0 +1,28 @@
+name: Metrics
+on:
+  # Regenerate the stats card once a day
+  schedule: [{cron: "0 0 * * *"}]
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+  # Regenerate on push to main (e.g. after config changes)
+  push: {branches: ["main"]}
+
+permissions:
+  contents: write
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate GitHub metrics
+        uses: lowlighter/metrics@latest
+        with:
+          # Personal Access Token (classic) stored as a repo secret.
+          # Scopes: public_repo (or repo for private stats), read:user.
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: gmaOCR
+          filename: github-metrics.svg
+          config_timezone: Pacific/Noumea
+          base: header, activity, community, repositories, metadata
+          # Commit the generated SVG back to the repository
+          committer_message: "[skip ci] chore: update github-metrics.svg"

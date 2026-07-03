@@ -54,7 +54,7 @@ I’m passionate about programming, automation, artificial intelligence, and ope
 
 ## 📈 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=gmaOCR&show_icons=true&hide_title=true)
+![GitHub Stats](./github-metrics.svg)
 
 ## ✨ Featured Projects
 
